@@ -1,0 +1,60 @@
+name: Deploy to GitHub Pages
+
+# Run workflow on every push to the main branch
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy-to-github-pages:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    # Checkout the code
+    - uses: actions/checkout@v4
+
+    # Install .NET SDK
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    # Publish the site
+    - name: Publish .NET Project
+      run: dotnet publish DataDisplayer/DataDisplayer/DataDisplayer.csproj -c Release -o release --nologo
+
+    # Changes the base-tag in index.html from '/' to 'DataDisplayer' to match GitHub Pages repository subdirectory
+    - name: Change base-tag in index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/DataDisplayer\/" \/>/g' release/wwwroot/index.html
+
+    # Add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project
+    - name: Add .nojekyll file
+      run: touch release/wwwroot/.nojekyll
+
+    # Copy index.html to 404.html to serve the same file when a file is not found
+    - name: Copy index.html to 404.html
+      run: cp release/wwwroot/index.html release/wwwroot/404.html
+
+    # Upload artifact for deployment
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: 'release/wwwroot'
+
+    # Deploy to GitHub Pages
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
