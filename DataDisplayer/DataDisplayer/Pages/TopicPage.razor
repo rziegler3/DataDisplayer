@@ -1,0 +1,63 @@
+@page "/topic/{TopicId:long}"
+@using DataDisplayer.Models
+@using DataDisplayer.Services
+@inject TopicService TopicService
+@inject TextService TextService
+@inject FormatService FormatService
+
+<PageTitle>@(currentTopic?.Name ?? "Topic")</PageTitle>
+
+<div class="container mt-4">
+    @if (currentTopic == null || textFormats == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        @foreach (var item in textFormats)
+        {
+            <div style="margin-top: @(item.Format?.SpaceBefore ?? 0)px; margin-bottom: @(item.Format?.SpaceAfter ?? 0)px;">
+                <p style="font-size: @(item.Format?.TextSize ?? 16)px; text-decoration: @(item.Format?.UnderLined == true ? "underline" : "none"); margin: 0;">
+                    @item.Text.TextContent
+                </p>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    [Parameter]
+    public long TopicId { get; set; }
+
+    private Topic? currentTopic;
+    private List<(Text Text, Format? Format)>? textFormats;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadDataAsync();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await LoadDataAsync();
+    }
+
+    private async Task LoadDataAsync()
+    {
+        currentTopic = await TopicService.GetTopicByIdAsync(TopicId);
+        var texts = await TextService.GetTextsByTopicIdAsync(TopicId);
+        
+        // Load all formats once
+        var formats = await FormatService.GetFormatsAsync();
+        var formatDict = formats.ToDictionary(f => f.Id);
+        
+        // Combine texts with their formats efficiently
+        textFormats = texts.Select(text => 
+        (
+            Text: text,
+            Format: text.Format?.Id != null && formatDict.ContainsKey(text.Format.Id) 
+                ? formatDict[text.Format.Id] 
+                : null
+        )).ToList();
+    }
+}

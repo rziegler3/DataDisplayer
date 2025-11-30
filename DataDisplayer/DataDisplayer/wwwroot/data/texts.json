@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "topic": { "id": 1 },
+    "format": { "id": 1 },
+    "textContent": "Welcome to DataDisplayer",
+    "position": 0
+  },
+  {
+    "id": 2,
+    "topic": { "id": 1 },
+    "format": { "id": 2 },
+    "textContent": "This is a modern web application built with Blazor WebAssembly. Browse through the navigation menu to explore different topics and discover content organized in a clean, intuitive interface.",
+    "position": 1
+  },
+  {
+    "id": 3,
+    "topic": { "id": 2 },
+    "format": { "id": 1 },
+    "textContent": "About Us",
+    "position": 0
+  },
+  {
+    "id": 4,
+    "topic": { "id": 2 },
+    "format": { "id": 2 },
+    "textContent": "We are dedicated to creating innovative solutions that make data presentation simple and elegant. Our platform allows you to display formatted content with custom styling and organization.",
+    "position": 1
+  },
+  {
+    "id": 5,
+    "topic": { "id": 3 },
+    "format": { "id": 1 },
+    "textContent": "Our Services",
+    "position": 0
+  },
+  {
+    "id": 6,
+    "topic": { "id": 3 },
+    "format": { "id": 3 },
+    "textContent": "Content Management",
+    "position": 1
+  },
+  {
+    "id": 7,
+    "topic": { "id": 3 },
+    "format": { "id": 2 },
+    "textContent": "Organize and display your content with custom formatting options including text size, spacing, and text decoration.",
+    "position": 2
+  },
+  {
+    "id": 8,
+    "topic": { "id": 3 },
+    "format": { "id": 3 },
+    "textContent": "Dynamic Navigation",
+    "position": 3
+  },
+  {
+    "id": 9,
+    "topic": { "id": 3 },
+    "format": { "id": 2 },
+    "textContent": "Navigate seamlessly through different topics with our intuitive menu system, powered by JSON configuration.",
+    "position": 4
+  },
+  {
+    "id": 10,
+    "topic": { "id": 4 },
+    "format": { "id": 1 },
+    "textContent": "Get In Touch",
+    "position": 0
+  },
+  {
+    "id": 11,
+    "topic": { "id": 4 },
+    "format": { "id": 2 },
+    "textContent": "Have questions or feedback? We'd love to hear from you! Reach out to us through our contact channels and we'll get back to you as soon as possible.",
+    "position": 1
+  }
+]

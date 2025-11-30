@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Heading",
+    "textSize": 32,
+    "spaceBefore": 0,
+    "spaceAfter": 20,
+    "underLined": true
+  },
+  {
+    "id": 2,
+    "name": "Body",
+    "textSize": 16,
+    "spaceBefore": 10,
+    "spaceAfter": 10,
+    "underLined": false
+  },
+  {
+    "id": 3,
+    "name": "Subheading",
+    "textSize": 24,
+    "spaceBefore": 15,
+    "spaceAfter": 10,
+    "underLined": false
+  }
+]
