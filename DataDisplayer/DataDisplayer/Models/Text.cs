@@ -6,4 +6,5 @@ public class Text
     public Topic? Topic { get; set; }
     public Format? Format { get; set; }
     public string TextContent { get; set; } = string.Empty;
+    public int Position { get; set; }
 }
