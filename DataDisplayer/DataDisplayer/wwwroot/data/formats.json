@@ -1,26 +1,42 @@
 [
-  {
-    "id": 1,
-    "name": "Heading",
-    "textSize": 32,
-    "spaceBefore": 0,
-    "spaceAfter": 20,
-    "underLined": true
-  },
-  {
-    "id": 2,
-    "name": "Body",
-    "textSize": 16,
-    "spaceBefore": 10,
-    "spaceAfter": 10,
-    "underLined": false
-  },
-  {
-    "id": 3,
-    "name": "Subheading",
-    "textSize": 24,
-    "spaceBefore": 15,
-    "spaceAfter": 10,
-    "underLined": false
-  }
+	{
+		"id": 1,
+		"name": "Heading",
+		"textSize": 28,
+		"spaceBefore": 0,
+		"spaceAfter": 16,
+		"underLined": true
+	},
+	{
+		"id": 2,
+		"name": "Subheading",
+		"textSize": 20,
+		"spaceBefore": 12,
+		"spaceAfter": 12,
+		"underLined": false
+	},
+	{
+		"id": 3,
+		"name": "Body",
+		"textSize": 16,
+		"spaceBefore": 8,
+		"spaceAfter": 8,
+		"underLined": false
+	},
+	{
+		"id": 4,
+		"name": "ListItem",
+		"textSize": 16,
+		"spaceBefore": 4,
+		"spaceAfter": 4,
+		"underLined": false
+	},
+	{
+		"id": 5,
+		"name": "Quote",
+		"textSize": 16,
+		"spaceBefore": 8,
+		"spaceAfter": 8,
+		"underLined": false
+	}
 ]

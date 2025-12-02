@@ -1,22 +1,7 @@
 [
-  {
-    "id": 1,
-    "name": "Home",
-    "icon": "bi bi-house-door-fill"
-  },
-  {
-    "id": 2,
-    "name": "About",
-    "icon": "bi bi-info-circle-fill"
-  },
-  {
-    "id": 3,
-    "name": "Services",
-    "icon": "bi bi-gear-fill"
-  },
-  {
-    "id": 4,
-    "name": "Contact",
-    "icon": "bi bi-envelope-fill"
-  }
+	{
+		"id": 1,
+		"name": "Musik",
+		"icon": "bi bi-music-note-list"
+	}
 ]

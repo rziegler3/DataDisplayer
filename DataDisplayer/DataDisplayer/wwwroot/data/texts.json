@@ -1,79 +1,42 @@
 [
-  {
-    "id": 1,
-    "topic": { "id": 1 },
-    "format": { "id": 1 },
-    "textContent": "Welcome to DataDisplayer",
-    "position": 0
-  },
-  {
-    "id": 2,
-    "topic": { "id": 1 },
-    "format": { "id": 2 },
-    "textContent": "This is a modern web application built with Blazor WebAssembly. Browse through the navigation menu to explore different topics and discover content organized in a clean, intuitive interface.",
-    "position": 1
-  },
-  {
-    "id": 3,
-    "topic": { "id": 2 },
-    "format": { "id": 1 },
-    "textContent": "About Us",
-    "position": 0
-  },
-  {
-    "id": 4,
-    "topic": { "id": 2 },
-    "format": { "id": 2 },
-    "textContent": "We are dedicated to creating innovative solutions that make data presentation simple and elegant. Our platform allows you to display formatted content with custom styling and organization.",
-    "position": 1
-  },
-  {
-    "id": 5,
-    "topic": { "id": 3 },
-    "format": { "id": 1 },
-    "textContent": "Our Services",
-    "position": 0
-  },
-  {
-    "id": 6,
-    "topic": { "id": 3 },
-    "format": { "id": 3 },
-    "textContent": "Content Management",
-    "position": 1
-  },
-  {
-    "id": 7,
-    "topic": { "id": 3 },
-    "format": { "id": 2 },
-    "textContent": "Organize and display your content with custom formatting options including text size, spacing, and text decoration.",
-    "position": 2
-  },
-  {
-    "id": 8,
-    "topic": { "id": 3 },
-    "format": { "id": 3 },
-    "textContent": "Dynamic Navigation",
-    "position": 3
-  },
-  {
-    "id": 9,
-    "topic": { "id": 3 },
-    "format": { "id": 2 },
-    "textContent": "Navigate seamlessly through different topics with our intuitive menu system, powered by JSON configuration.",
-    "position": 4
-  },
-  {
-    "id": 10,
-    "topic": { "id": 4 },
-    "format": { "id": 1 },
-    "textContent": "Get In Touch",
-    "position": 0
-  },
-  {
-    "id": 11,
-    "topic": { "id": 4 },
-    "format": { "id": 2 },
-    "textContent": "Have questions or feedback? We'd love to hear from you! Reach out to us through our contact channels and we'll get back to you as soon as possible.",
-    "position": 1
-  }
+  { "id": 1, "topic": { "id": 1 }, "format": { "id": 1 }, "textContent": "1. Musik als Kunstform und ihre Besonderheiten", "position": 0 },
+  { "id": 2, "topic": { "id": 1 }, "format": { "id": 3 }, "textContent": "Musik, definiert als die Tonkunst, ist eine universelle Erscheinung in allen bekannten Gesellschaften und Kulturen der Welt. Sie transportiert starke Emotionen und ist eine Sprache des Gefühls. Die Geschichte der Musik ist untrennbar mit jener der Kunst verbunden.", "position": 1 },
+  { "id": 3, "topic": { "id": 1 }, "format": { "id": 2 }, "textContent": "Gestaltungselemente der Musik", "position": 2 },
+  { "id": 4, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Rhythmus: Ordnung und Gliederung des zeitlichen Verlaufs von Klängen.", "position": 3 },
+  { "id": 5, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Melodie: Eine Folge von Tönen in Bezug zu Tonhöhe und Tondauer.", "position": 4 },
+  { "id": 6, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Harmonie: Der Zusammenklang verschiedener Töne.", "position": 5 },
+  { "id": 7, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Klangfarbe: Das Schallspektrum eines Instruments, bestimmt durch Tonhöhe, Obertöne und Lautstärke.", "position": 6 },
+  { "id": 8, "topic": { "id": 1 }, "format": { "id": 2 }, "textContent": "Historischer Wandel und Popularisierung", "position": 7 },
+  { "id": 9, "topic": { "id": 1 }, "format": { "id": 3 }, "textContent": "Die klassische Musik des 17. bis 19. Jahrhunderts war tonal und melodiös. Diese Ära wird in Epochen wie Barock, Klassik und Romantik unterteilt.", "position": 8 },
+  { "id": 10, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Barock (17. Jh.): Komponisten wie J. S. Bach und Vivaldi.", "position": 9 },
+  { "id": 11, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Klassik (18. Jh.): Komponisten wie Haydn, Mozart und Beethoven.", "position": 10 },
+  { "id": 12, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Romantik (19. Jh.): Komponisten wie Schubert, Schumann und Chopin.", "position": 11 },
+  { "id": 13, "topic": { "id": 1 }, "format": { "id": 3 }, "textContent": "Zu Beginn des 20. Jahrhunderts entwickelten sich Erneuerungen; Komponisten experimentierten mit neuen Formen wie atonaler Musik. Die Schallplatte und der Rundfunk trugen zur Popularisierung bei, wodurch Jazz und Pop weite Verbreitung fanden.", "position": 12 },
+  { "id": 14, "topic": { "id": 1 }, "format": { "id": 2 }, "textContent": "Symbiose mit anderen Künsten", "position": 13 },
+  { "id": 15, "topic": { "id": 1 }, "format": { "id": 3 }, "textContent": "Musik und visuelle Kunst stehen oft in enger Verbindung: Musik kann visuelle Werke untermalen und ihre Wirkung verstärken.", "position": 14 },
+  { "id": 16, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Inspiration und Untermalung: Komponisten ließen sich von der Kunst ihrer Zeit inspirieren.", "position": 15 },
+  { "id": 17, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Multimedialität: Die Verbindung verschiedener Kunstformen schafft immersive Erfahrungen.", "position": 16 },
+  { "id": 18, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Visuelle Repräsentation: Beispiele sind Musikvideos und Albumcover.", "position": 17 },
+  { "id": 19, "topic": { "id": 1 }, "format": { "id": 2 }, "textContent": "Verschiedene Musikrichtungen und ihre Merkmale", "position": 18 },
+  { "id": 20, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Rock: Wurzeln im Rock 'n' Roll und Blues; gekennzeichnet durch E-Gitarren und treibende Rhythmen.", "position": 19 },
+  { "id": 21, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Pop: Gekennzeichnet durch eingängige Melodien und breite Anziehungskraft.", "position": 20 },
+  { "id": 22, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Hip-Hop/Rap: Entstand in den 1970ern; zentrale Elemente sind Sampling und Rap.", "position": 21 },
+  { "id": 23, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Jazz: Ein zentrales Merkmal ist die Improvisation.", "position": 22 },
+  { "id": 24, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Klassische Musik: Definiert durch Struktur und Harmonie.", "position": 23 },
+  { "id": 25, "topic": { "id": 1 }, "format": { "id": 2 }, "textContent": "Die Wirkung von Musik auf Stimmung und Emotionen", "position": 24 },
+  { "id": 26, "topic": { "id": 1 }, "format": { "id": 3 }, "textContent": "Musik beeinflusst unsere Stimmung und kann beruhigen, motivieren oder starke emotionale Reaktionen hervorrufen.", "position": 25 },
+  { "id": 27, "topic": { "id": 1 }, "format": { "id": 3 }, "textContent": "Musik wird auch therapeutisch eingesetzt, zum Beispiel in der Musiktherapie.", "position": 26 }
+,
+  { "id": 28, "topic": { "id": 1 }, "format": { "id": 1 }, "textContent": "| Genre | Herkunft & Hauptmerkmale |", "position": 27 },
+  { "id": 29, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Blues: Entstand im späten 19. Jahrhundert; folgt oft dem 12-Takt-Schema und beeinflusste viele moderne Genres.", "position": 28 },
+  { "id": 30, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Volksmusik/Country: Fokussiert auf Kultur, einfaches Leben und Geschichten; Country ist die ‚Volksmusik der Amerikaner‘.", "position": 29 },
+  { "id": 31, "topic": { "id": 1 }, "format": { "id": 2 }, "textContent": "Emotionale und kognitive Effekte", "position": 30 },
+  { "id": 32, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Stimmungsregulation: Die Stimmungsregulation ist ein wichtiger Motivator, Musik zu hören.", "position": 31 },
+  { "id": 33, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Kognition: Musizieren verlangt komplexe Fähigkeiten; der musikalische Verstand kann hoch entwickelt sein und wird als isolierte musikalische Intelligenz beschrieben.", "position": 32 },
+  { "id": 34, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Gedächtnis: Musik aus der Jugendzeit ist besonders prägend und leicht erinnerbar.", "position": 33 },
+  { "id": 35, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Soziales Verhalten: Gemeinsames Singen oder Musizieren stärkt das Sozialverhalten.", "position": 34 },
+  { "id": 36, "topic": { "id": 1 }, "format": { "id": 2 }, "textContent": "Angst und Gänsehaut-Effekt", "position": 35 },
+  { "id": 37, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Evolutionäre Alarmanlage: Der Hörsinn funktioniert als eine Art Alarmanlage. Tiefe Frequenzen können ein Gefühl der Bedrohung hervorrufen, da sie die Ortung der Schallquelle erschweren.", "position": 36 },
+  { "id": 38, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Spannungssteigerung: Verzerrte Klänge lösen Ängste und Trauer aus; solche Effekte werden in Filmen genutzt, um Spannung zu erzeugen.", "position": 37 },
+  { "id": 39, "topic": { "id": 1 }, "format": { "id": 4 }, "textContent": "Individualität: Es gibt keine universelle Gänsehaut-Musik; der Effekt hängt stark von Hörgewohnheiten und Vorlieben ab.", "position": 38 }
 ]
