@@ -5,7 +5,9 @@
 		"textSize": 28,
 		"spaceBefore": 0,
 		"spaceAfter": 16,
-		"underLined": true
+		"underLined": true,
+		"isBold": true,
+		"isBulletPoint": false
 	},
 	{
 		"id": 2,
@@ -13,7 +15,9 @@
 		"textSize": 20,
 		"spaceBefore": 12,
 		"spaceAfter": 12,
-		"underLined": false
+		"underLined": false,
+		"isBold": true,
+		"isBulletPoint": false
 	},
 	{
 		"id": 3,
@@ -21,7 +25,9 @@
 		"textSize": 16,
 		"spaceBefore": 8,
 		"spaceAfter": 8,
-		"underLined": false
+		"underLined": false,
+		"isBold": false,
+		"isBulletPoint": false
 	},
 	{
 		"id": 4,
@@ -29,7 +35,9 @@
 		"textSize": 16,
 		"spaceBefore": 4,
 		"spaceAfter": 4,
-		"underLined": false
+		"underLined": false,
+		"isBold": false,
+		"isBulletPoint": true
 	},
 	{
 		"id": 5,
@@ -37,6 +45,40 @@
 		"textSize": 16,
 		"spaceBefore": 8,
 		"spaceAfter": 8,
-		"underLined": false
+		"underLined": false,
+		"isBold": false,
+		"isBulletPoint": false
+	}
+	,
+	{
+		"id": 6,
+		"name": "IndentedListItem",
+		"textSize": 16,
+		"spaceBefore": 2,
+		"spaceAfter": 2,
+		"underLined": false,
+		"isBold": false,
+		"isBulletPoint": true
+	},
+	{
+		"id": 7,
+		"name": "BoldListItem",
+		"textSize": 16,
+		"spaceBefore": 4,
+		"spaceAfter": 4,
+		"underLined": false,
+		"isBold": true,
+		"isBulletPoint": true
+	},
+	{
+		"id": 8,
+		"name": "ItalicBody",
+		"textSize": 16,
+		"spaceBefore": 8,
+		"spaceAfter": 8,
+		"underLined": false,
+		"isBold": false,
+		"isBulletPoint": false,
+		"isItalic": true
 	}
 ]

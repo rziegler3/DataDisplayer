@@ -17,9 +17,20 @@
         @foreach (var item in textFormats)
         {
             <div style="margin-top: @(item.Format?.SpaceBefore ?? 0)px; margin-bottom: @(item.Format?.SpaceAfter ?? 0)px;">
-                <p style="font-size: @(item.Format?.TextSize ?? 16)px; text-decoration: @(item.Format?.UnderLined == true ? "underline" : "none"); margin: 0;">
-                    @item.Text.TextContent
-                </p>
+                @if (item.Format?.IsBulletPoint == true)
+                {
+                    <ul style="margin: 0 0 0 1.5em; padding: 0;">
+                        <li style="font-size: @(item.Format?.TextSize ?? 16)px; text-decoration: @(item.Format?.UnderLined == true ? "underline" : "none"); font-weight: @(item.Format?.IsBold == true ? "bold" : "normal");">
+                            @item.Text.TextContent
+                        </li>
+                    </ul>
+                }
+                else
+                {
+                    <p style="font-size: @(item.Format?.TextSize ?? 16)px; text-decoration: @(item.Format?.UnderLined == true ? "underline" : "none"); font-weight: @(item.Format?.IsBold == true ? "bold" : "normal"); margin: 0;">
+                        @item.Text.TextContent
+                    </p>
+                }
             </div>
         }
     }

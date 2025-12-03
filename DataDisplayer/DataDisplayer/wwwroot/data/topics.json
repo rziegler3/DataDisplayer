@@ -3,5 +3,10 @@
 		"id": 1,
 		"name": "Musik",
 		"icon": "bi bi-music-note-list"
+	},
+	{
+		"id": 2,
+		"name": "Bildende Kunst Fokus 'Malerei'",
+		"icon": "bi bi-brush"
 	}
 ]

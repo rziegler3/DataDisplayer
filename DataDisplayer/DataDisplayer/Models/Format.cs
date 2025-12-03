@@ -8,4 +8,6 @@ public class Format
     public int SpaceBefore { get; set; }
     public int SpaceAfter { get; set; }
     public bool UnderLined { get; set; }
+    public bool IsBold { get; set; }
+    public bool IsBulletPoint { get; set; }
 }
