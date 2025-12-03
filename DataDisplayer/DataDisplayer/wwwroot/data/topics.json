@@ -15,4 +15,10 @@
 		"name": "Bildende Kunst Fokus 'Fotografie'",
 		"icon": "bi bi-camera"
 	}
+	,
+	{
+		"id": 4,
+		"name": "Darstellende Kunst",
+		"icon": "bi bi-film"
+	}
 ]
