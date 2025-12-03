@@ -9,4 +9,10 @@
 		"name": "Bildende Kunst Fokus 'Malerei'",
 		"icon": "bi bi-brush"
 	}
+	,
+	{
+		"id": 3,
+		"name": "Bildende Kunst Fokus 'Fotografie'",
+		"icon": "bi bi-camera"
+	}
 ]
