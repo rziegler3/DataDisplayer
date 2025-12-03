@@ -11,5 +11,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddScoped<TopicService>();
 builder.Services.AddScoped<TextService>();
 builder.Services.AddScoped<FormatService>();
+	builder.Services.AddScoped<TopicImageService>();
 
 await builder.Build().RunAsync();

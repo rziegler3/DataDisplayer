@@ -1,0 +1,8 @@
+[
+  { "topicId": 2, "fileName": "malerei1.jpg", "altText": "Beispielbild Malerei", "position": 0 },
+  { "topicId": 2, "fileName": "malerei2.jpg", "altText": "Zweites Bild Malerei", "position": 1 },
+  { "topicId": 3, "fileName": "fotografie1.jpg", "altText": "Beispielbild Fotografie", "position": 0 }
+  ,
+  { "topicId": 5, "fileName": "Forest.jpg", "altText": "Wald Fotografie", "position": 0 },
+  { "topicId": 5, "fileName": "ForestAnalysis.jpg", "altText": "Analyse der Waldfotografie", "position": 1 }
+]

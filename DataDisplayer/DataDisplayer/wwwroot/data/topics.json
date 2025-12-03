@@ -21,4 +21,10 @@
 		"name": "Darstellende Kunst",
 		"icon": "bi bi-film"
 	}
+	,
+	{
+		"id": 5,
+		"name": "Kunstbetrachtung in der Fotografie",
+		"icon": "bi bi-image"
+	}
 ]

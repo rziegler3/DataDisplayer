@@ -4,6 +4,7 @@
 @inject TopicService TopicService
 @inject TextService TextService
 @inject FormatService FormatService
+@inject TopicImageService TopicImageService
 
 <PageTitle>@(currentTopic?.Name ?? "Topic")</PageTitle>
 
@@ -33,6 +34,16 @@
                 }
             </div>
         }
+
+        @if (topicImages != null && topicImages.Count > 0)
+        {
+            <div class="mt-4">
+                @foreach (var img in topicImages.OrderBy(i => i.Position))
+                {
+                    <img src="images/@img.FileName" alt="@img.AltText" style="max-width:100%; margin-bottom:1em;" />
+                }
+            </div>
+        }
     }
 </div>
 
@@ -42,6 +53,7 @@
 
     private Topic? currentTopic;
     private List<(Text Text, Format? Format)>? textFormats;
+    private List<TopicImage>? topicImages;
 
     protected override async Task OnInitializedAsync()
     {
@@ -57,18 +69,20 @@
     {
         currentTopic = await TopicService.GetTopicByIdAsync(TopicId);
         var texts = await TextService.GetTextsByTopicIdAsync(TopicId);
-        
         // Load all formats once
         var formats = await FormatService.GetFormatsAsync();
         var formatDict = formats.ToDictionary(f => f.Id);
-        
+
         // Combine texts with their formats efficiently
-        textFormats = texts.Select(text => 
+        textFormats = texts.Select(text =>
         (
             Text: text,
-            Format: text.Format?.Id != null && formatDict.ContainsKey(text.Format.Id) 
-                ? formatDict[text.Format.Id] 
+            Format: text.Format?.Id != null && formatDict.ContainsKey(text.Format.Id)
+                ? formatDict[text.Format.Id]
                 : null
         )).ToList();
+
+        // Load images for this topic
+        topicImages = await TopicImageService.GetImagesForTopicAsync((int)TopicId);
     }
 }
